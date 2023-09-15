@@ -35,6 +35,18 @@ const routes: Routes = [
     path: 'bitacorasiguiente',
     loadChildren: () => import('./bitacorasiguiente/bitacorasiguiente.module').then( m => m.BitacorasiguientePageModule)
   },
+  {
+    path: 'alumnoregistro',
+    loadChildren: () => import('./alumnoregistro/alumnoregistro.module').then( m => m.AlumnoregistroPageModule)
+  },
+  {
+    path: 'camaraalumno',
+    loadChildren: () => import('./camaraalumno/camaraalumno.module').then( m => m.CamaraalumnoPageModule)
+  },
+  {
+    path: 'asistenciapersonal',
+    loadChildren: () => import('./asistenciapersonal/asistenciapersonal.module').then( m => m.AsistenciapersonalPageModule)
+  },
 ];
 
 @NgModule({
