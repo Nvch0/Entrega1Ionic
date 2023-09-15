@@ -47,6 +47,14 @@ const routes: Routes = [
     path: 'asistenciapersonal',
     loadChildren: () => import('./asistenciapersonal/asistenciapersonal.module').then( m => m.AsistenciapersonalPageModule)
   },
+  {
+    path: 'registroalumnobase',
+    loadChildren: () => import('./registroalumnobase/registroalumnobase.module').then( m => m.RegistroalumnobasePageModule)
+  },
+  {
+    path: 'pagmaqueta',
+    loadChildren: () => import('./pagmaqueta/pagmaqueta.module').then( m => m.PagmaquetaPageModule)
+  },
 ];
 
 @NgModule({

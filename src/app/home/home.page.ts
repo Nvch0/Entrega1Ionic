@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,20 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private router: Router) { }
 
+  user  ={
+    usuario:"",
+    password:""
+  }
+   public campo ="";
+  mostrarInfo(){
+    console.log(this.user);
+    if (this.user.usuario!="" && this.user.password!=""){
+      this.campo="Usuario Existente";
+    }else{
+      this.campo="Usuario no Existe";
+    }
+  }
+  public alertButtons = ['OK'];
 }
