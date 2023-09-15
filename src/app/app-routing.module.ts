@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'bitacora',
     loadChildren: () => import('./bitacora/bitacora.module').then( m => m.BitacoraPageModule)
   },
+  {
+    path: 'bitacorasiguiente',
+    loadChildren: () => import('./bitacorasiguiente/bitacorasiguiente.module').then( m => m.BitacorasiguientePageModule)
+  },
 ];
 
 @NgModule({
