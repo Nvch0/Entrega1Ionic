@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'alumnos',
     loadChildren: () => import('./alumnos/alumnos.module').then( m => m.AlumnosPageModule)
   },
+  {
+    path: 'asistencia',
+    loadChildren: () => import('./asistencia/asistencia.module').then( m => m.AsistenciaPageModule)
+  },
+  {
+    path: 'codigqr',
+    loadChildren: () => import('./codigqr/codigqr.module').then( m => m.CodigqrPageModule)
+  },
 ];
 
 @NgModule({
