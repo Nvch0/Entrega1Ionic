@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'codigqr',
     loadChildren: () => import('./codigqr/codigqr.module').then( m => m.CodigqrPageModule)
   },
+  {
+    path: 'bitacora',
+    loadChildren: () => import('./bitacora/bitacora.module').then( m => m.BitacoraPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 <ion-content color="warning" class="ion-padding">
-  <h1>Asistencia</h1>
+  <h1>Bitacora</h1>
   <ion-button expand="block" shape="round" size="small" [routerLink]="['/principal']">Volver</ion-button>
 
   <div id="container">
@@ -31,8 +31,21 @@
             </ion-select>
           </ion-item>
         </ion-list><br>
-        <ion-button expand="block" shape="round" color="dark" [routerLink]="['/codigqr']">Ingresar</ion-button>
-        
+
+        <ion-list>
+          <ion-item>
+            <ion-select aria-label="apl" placeholder="Seleccione Materia">
+              <ion-select-option value="Lenguaje">Lenguaje</ion-select-option>
+              <ion-select-option value="Matematicas">Matematicas</ion-select-option>
+              <ion-select-option value="Ingles">Ingles</ion-select-option>
+              <ion-select-option value="Ciencias">Ciencias</ion-select-option>
+              <ion-select-option value="Musica">Musica</ion-select-option>
+              <ion-select-option value="Tecnologia">Tecnologia</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list><br>
+
+        <ion-button expand="block" shape="round" color="dark" [routerLink]="['/']">Ingresar</ion-button>
         
       </ion-card-content>
     </ion-card>
